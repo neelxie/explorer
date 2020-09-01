@@ -1,0 +1,48 @@
+.container{
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: wrap-reverse; */
+    height: 500px;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.stick{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+.fletems{
+    border: 1px solid red;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+}
+.derek{
+
+}
+
+.tuey{
+    align-self: stretch;
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+    background-color: pink;
+}
+li a{
+    text-decoration: none;
+    padding: 15px;
+}
+
+@media all and (max-width: 800px){
+    .stick{
+        justify-content: space-around;
+    }
+}
+
+@media all and (max-width: 500px){
+    .stick{
+        flex-direction: column;
+    }
+}

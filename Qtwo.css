@@ -1,0 +1,40 @@
+html{
+    background-color: lightpink;
+    font-size:18px;
+}
+
+form{
+    margin: 0 auto;
+    /* display: table-column; */
+    box-shadow: 20px 20px rgba(0, 0, 0, 0.3);
+    transform: translate(100px, 50px);
+}
+/* code below creates the form border and formats background color */
+form{
+    width:50vw;
+    /* height:50vh; */
+    border:3px solid black;
+    border-radius:30px;
+    background-color:lightskyblue;
+}
+/* code below boldens and increase font size of paragraphs */
+p{
+    font-size:20px;
+    font-weight: bold;
+}
+input, label, textarea, small{
+    display: table-cell;
+    width: 40%;
+    border-radius: 3px;
+}
+input:hover{
+    width: 50%;
+}
+
+.button{
+    background: pink;
+    line-height: 1.2;
+}
+.button:hover{
+    background-color: red;
+}

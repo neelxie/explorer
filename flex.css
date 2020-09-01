@@ -1,0 +1,31 @@
+*{
+    font-size: 2rem;
+    color: black
+}
+.flexicon{
+    display: flex;
+    /* flex-direction: column-reverse; */
+    background-color: lawngreen;
+    flex-wrap: wrap;
+    height: 600px;
+    align-content: space-between;
+}
+.flextems{
+    width: 100px;
+    /* height: 90px; */
+    margin: 10px;
+    background-color: lightcoral;
+    border: 1px solid black;
+    
+}
+.diffe{
+    /* flex-grow: 2; */
+    /* width: 150px;
+    height: 150px; */
+}
+
+.otha{
+    /* flex: 0 1 250px; */
+    /* width: 130px;
+    height: 180px; */
+}

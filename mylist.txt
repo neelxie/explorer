@@ -1,0 +1,47 @@
+_netrc
+2sec.html
+3D Objects
+AppData
+Application Data
+Contacts
+Cookies
+Desktop
+Dockerfile
+dockerzange
+Documents
+Downloads
+Favorites
+Links
+Local Settings
+MicrosoftEdgeBackups
+Music
+My Documents
+myExpressApp
+NetHood
+node_modules
+nothin
+NTUSER.DAT
+ntuser.dat.LOG1
+ntuser.dat.LOG2
+NTUSER.DAT{db1a0a8b-e668-11ea-9be9-00155db15a37}.TxR.0.regtrans-ms
+NTUSER.DAT{db1a0a8b-e668-11ea-9be9-00155db15a37}.TxR.1.regtrans-ms
+NTUSER.DAT{db1a0a8b-e668-11ea-9be9-00155db15a37}.TxR.2.regtrans-ms
+NTUSER.DAT{db1a0a8b-e668-11ea-9be9-00155db15a37}.TxR.blf
+NTUSER.DAT{db1a0a8c-e668-11ea-9be9-00155db15a37}.TM.blf
+NTUSER.DAT{db1a0a8c-e668-11ea-9be9-00155db15a37}.TMContainer00000000000000000001.regtrans-ms
+NTUSER.DAT{db1a0a8c-e668-11ea-9be9-00155db15a37}.TMContainer00000000000000000002.regtrans-ms
+ntuser.ini
+OneDrive
+package-lock.json
+pemhttpd.exe
+Pictures
+Postman
+PrintHood
+Recent
+Saved Games
+screenreader.html
+Searches
+SendTo
+Start Menu
+Templates
+Videos

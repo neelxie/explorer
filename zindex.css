@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+.header, .footer{
+    background-color: cadetblue;
+    color: cornsilk;
+    padding: 15px;
+}
+
+.column{
+    float: left;
+    padding: 15px;
+}
+
+.menu{
+    width: 25%;
+}
+
+.content{
+    width: 75%;
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.menu ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li{
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: cyan;
+    color: wheat;
+}
+
+.menu ul li:hover{
+    color: tomato;
+    background-color: teal;
+}

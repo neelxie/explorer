@@ -1,0 +1,35 @@
+
+main{
+    background-color: violet;
+    /* height: 100vh; */
+}
+
+.item{
+    min-height: 200px;
+}
+
+.first{
+    background-color: dimgray;
+    grid-area: header;
+}
+.second{
+    grid-area: main;
+    background-color: dodgerblue;
+}
+.third{
+    grid-area: nav;
+    background-color: fuchsia;
+}
+.forth{
+    grid-area: footer;
+    background-color: gold;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "header header nav"
+        "main . nav"
+        "footer footer nav";
+}

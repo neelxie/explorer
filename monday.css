@@ -1,0 +1,35 @@
+*{
+    background-color: moccasin;
+    font-size: 16px;
+    font-family: cursive;
+}
+
+.top{
+    background-color: lawngreen;
+    background-image: url(./big.jpg);
+    background-repeat: no-repeat;
+    /* background-size: 100% 100%; */
+    background-position: 500px 60%;
+    height: 80vh;
+}
+
+.middle{
+    background-color: rgb(248, 9, 176);
+    height: 90vh;
+    background-image: url(./shoes.jpg);
+    background-repeat: no-repeat;
+}
+
+.bottom{
+    /* background-color: maroon; */
+    height: 40vh;
+    /* background-image: inherit; */
+}
+a{
+    background-color: navy;
+}
+main{
+    background-image: url(./big.jpg);
+    height: 300vh;
+    background-repeat: repeat;
+}

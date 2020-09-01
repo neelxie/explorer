@@ -1,0 +1,19 @@
+*{
+    background-color: green;
+}
+main{
+    
+}
+p{
+    font-size: larger;
+    text-align: center;
+}
+h1,p, section{
+    background-color: blue;
+    /* set the color to red */
+    color: red;
+    /* calc function below gets 90 percent
+    of the entiire height and subtracts 200 pixels
+    the result is what is assigned as the height for
+    this selector. */
+}

@@ -1,0 +1,89 @@
+.check {
+  width: 500px;
+  margin: 50px auto;
+  clear: both;
+  display: block;
+  background-color: #009bff;
+  border-radius: 4px;
+}
+.check::after {
+  clear: both;
+  display: block;
+  content: "";
+}
+.check .checkbox-container {
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 40px 0px;
+}
+
+.checkbox-label {
+  color: white;
+  display: block;
+  position: relative;
+  margin: auto;
+  cursor: pointer;
+  font-size: 22px;
+  line-height: 24px;
+  height: 50px;
+  width: 24px;
+  clear: both;
+}
+.checkbox-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkbox-label .mark {
+  top: 30px;
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  background-color: transparent;
+  border-radius: 5px;
+  transition: all 0.3s ease-in;
+  border: 2px solid white;
+}
+.checkbox-label input:checked ~ .mark {
+  background-color: white;
+  border-radius: 5px;
+  transform: rotate(0deg) scale(1);
+  opacity: 1;
+  border: 2px solid white;
+}
+.checkbox-label .mark::after {
+  position: absolute;
+  content: "";
+  border-radius: 5px;
+}
+.checkbox-label input:checked ~ .mark::after {
+  transform: rotate(45deg) scale(1);
+  left: 8px;
+  top: 3px;
+  width: 6px;
+  height: 12px;
+  border: solid red;
+  border-width: 0 2px 2px 0;
+  border-radius: 0;
+}
+.checkbox-label .mark::before {
+  position: absolute;
+  content: "";
+  border-radius: 10px;
+  border: 5px solid yellow;
+  transform: scale(0);
+}
+
+.checkbox-label input:checked ~ .mark::before {
+  left: -3px;
+  top: -3px;
+  width: 24px;
+  height: 24px;
+  border-radius: 5px;
+  transform: scale(3);
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}

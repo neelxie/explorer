@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Question Two</title>
+        <meta name="author" content="Kimberley">
+        <meta name="solution" content="question two">
+        <link rel="stylesheet" href="Qtwo.css">
+    </head>
+    <body>
+        <main>
+            <section>
+                <h1>Question 2 Solution</h1>
+                <form>
+                
+                    <fieldset>
+                        <p>Please fill out the Form:</p>
+                        <!-- First name should have between 3 and 15 characters -->
+                        <label>First Name</label>
+                        <input type="text" minlength="3" maxlength="15" placeholder="First Name" required>
+
+                        <!-- Last name should have between 3 and 15 characters -->
+                        <label>Last Name</label>
+                        <input type="text" minlength="3" maxlength="15" required>
+
+                        <!-- only gmail email accounts are accepted -->
+                        <label>Email</label>
+                        <input type="email" placeholder="name@gmail.com" pattern=".*@gmail.com" required>
+                        
+                        <!-- age must be between 21 and 60 inclusive-->
+                        <label>Age</label>
+                        <input type="number" min="21" max="60">
+
+                        <label>Address</label>
+                        <textarea placeholder="Enter address here"></textarea>
+
+                        <!-- phone number must be in specified format -->
+                        <label>Phone Number</label>
+                        <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{3}">
+                        <small>Format: xxx-xxx-xxx-xxx</small>
+                        <br><br>
+
+                        <label>Personal Description</label>
+                        <textarea placeholder="Enter text here"></textarea>
+                        <center><input type="submit" class="button"></center>
+                    </fieldset>
+                
+                </form>
+            </section>
+        </main>
+    </body>
+</html>

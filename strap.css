@@ -1,0 +1,11 @@
+body{
+    position: relative;
+}
+/* a{
+    margin: 6rem 4rem;
+} */
+
+.list-group{
+    position: sticky;
+    top: 20px;
+}

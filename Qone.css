@@ -1,0 +1,46 @@
+ul{
+    padding:10px;
+    list-style: none;
+    text-align: right;
+}
+/* code below center aligns footer links */
+ol{
+    text-align:center;
+}
+/* code below formats all listed links into an inline block (horizontal line) */
+ol li, ul li{
+    display: inline-block;
+}
+
+ul li a{
+    text-decoration: none;
+    color:black;
+    padding:10px 20px;
+}
+
+/* links appear to be blue when hovered with a mouse */
+ul li a:hover{
+    color:blue;
+}
+
+/* code below gives sign in link appearance of a button */
+.signin{
+    background-color: lightgray;
+    padding:3px 3px;
+    border: 2px solid darkgray;
+}
+
+div{
+    text-align:center;
+}
+
+/* code below adjusts size of the google logo image */
+img{
+    width:15%;
+}
+/* code below increases width of search box */
+.box{
+    width:20vw;
+    height:3vh;
+    border-radius:12px;
+}
