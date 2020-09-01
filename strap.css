@@ -1,9 +1,9 @@
 body{
     position: relative;
 }
-/* a{
+a{
     margin: 6rem 4rem;
-} */
+}
 
 .list-group{
     position: sticky;
