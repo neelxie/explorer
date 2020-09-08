@@ -2,11 +2,13 @@ html{
     width:50%;
     height:80%;
 } 
+
 /* code below formats the elements contained in the header tag */
 header{
     background-color: orangered;
     color:white;
 }
+
 h1{
     text-align:center;
     height:10px;
