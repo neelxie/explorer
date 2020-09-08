@@ -42,6 +42,7 @@ ul li a{
     color: mediumvioletred;
     display: block;
 }
+
 ul li a:hover{
     background-color: red;
     color: white;
@@ -61,16 +62,8 @@ table{
     outline-style: thin;
 }
 
-th, td{
-    /* font-size: 4vw; */
-    /* padding: 25px; */
-    /* width: 150px;
-    height: 100px; */
-
-}
 td{
     text-align: center;
-    /* vertical-align: top; */
 }
 
 caption{
