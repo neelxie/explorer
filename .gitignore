@@ -6,4 +6,7 @@
 .tmp
 .log
 Thumbs.db
+.tmpe
+*.log
+Thumbs.cd
 DS_Store
