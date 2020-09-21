@@ -3,12 +3,12 @@
     font-size: 16px;
     box-sizing: border-box;
 }
-
 body{
-    position: relative;
+    position: fixed;
 }
 
 .list-group{
     position: sticky;
+    color: red;
     top: 20px;
 }

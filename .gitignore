@@ -1,0 +1,10 @@
+.env
+.vscode
+*/node_modules/*
+/bin
+/out
+.tmp
+Thumbs.db
+.tmpe
+*.log
+DS_Store
