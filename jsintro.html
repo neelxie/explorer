@@ -13,15 +13,20 @@
         <script></script>
     </head>
     <body>
+        <p id="result"></p>
         <script>
-            
+            function displaySize(){
+                var w = window.outerWidth;
+                var h = window.outerHeight;
+                var txt = "Window size: Width=" + w + ", height=" + h;
+
+                document.getElementById("result").innerHTML = txt;
+            }
+            window.onresize = displaySize;
         </script>
-        <div class="upper">
-            <form action="" method="post" onsubmit="alert('Form data has been stored');">
-                <label>First Name:</label>
-                <input type="text" name="firstname" id="" required>
-                <input type="submit" value="Submit">
-            </form>
-        </div>
+        <!-- <div class="upper">
+            <h1>This is a heading</h1>
+            <p>This is a paragraph</p>
+        </div> -->
     </body>
 </html>
