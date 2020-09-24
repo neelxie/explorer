@@ -39,37 +39,8 @@ h1{
     border-color: #923456;
 }
 
-.rem li{
-    font-size: 1.3rem;
-}
-.em li{
-    font-size: 1.3em;
-}
-form{
-    opacity: 0.9;
-    width: 50%;
-    text-align: center;
-}
-img{
-    min-width: 500px;
-    max-height: 1100px;
-}
-p{
-    /* width:50%; */
-    /* height: 10vh; */
-    border: 15px solid red;
-}
-p::before{
-    content: "Please read this.";
-}
-p::after{
-    content:"Dont forget this.";
-}
-
-.first{
-    margin-bottom: 50px;
-}
-
-.second{
-    margin-top: 30px;
+button{
+    color: red;
+    height: 3rem;
+    width: 5rem;
 }

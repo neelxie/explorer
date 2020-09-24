@@ -9,26 +9,24 @@
         <title>Introduction To JavaScript</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="./colors.css">
         <script></script>
     </head>
     <body>
-        <p id="fri"></p>
-        <p id="try"></p>
+        <p id="result"></p>
         <script>
-            var x = 20;
-            var y = 25;
-            var z = "20";
+            function displaySize(){
+                var w = window.outerWidth;
+                var h = window.outerHeight;
+                var txt = "Window size: Width=" + w + ", height=" + h;
 
-            alert(x == z);
-            alert(x === z);
-            alert(x != y);
-            alert(x !== z);
-            alert(x < y);
-            alert(x > y);
-            alert(x <= y);
-            alert(x >= y);
-
+                document.getElementById("result").innerHTML = txt;
+            }
+            window.onresize = displaySize;
         </script>
+        <!-- <div class="upper">
+            <h1>This is a heading</h1>
+            <p>This is a paragraph</p>
+        </div> -->
     </body>
 </html>
