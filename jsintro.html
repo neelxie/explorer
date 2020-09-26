@@ -15,14 +15,13 @@
     <body>
         <p id="result"></p>
         <script>
-            function displaySize(){
-                var w = window.outerWidth;
-                var h = window.outerHeight;
-                var txt = "Window size: Width=" + w + ", height=" + h;
+            var animals = "Dogs, cats, Lions, Tigers, Pandas";
+            var myArray = animals.split(", ");
+            
+            // document.write(x);
+            console.log(myArray);
 
-                document.getElementById("result").innerHTML = txt;
-            }
-            window.onresize = displaySize;
+
         </script>
         <!-- <div class="upper">
             <h1>This is a heading</h1>
