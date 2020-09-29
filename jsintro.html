@@ -15,12 +15,30 @@
     <body>
         <p id="result"></p>
         <script>
-            console.log(parseInt("3.14"));
-            console.log(parseInt("20px"));
-            console.log(parseInt("0xff", 16));
-            console.log(parseInt("30 years"));
-            console.log(parseInt("year 2020"));
-            console.log(parseInt("10 28 2020"));
+            var now = new Date();
+
+            var today = now.getDay();
+
+            if(today == 2){
+
+                alert("Enjoy your Tuesday!");
+
+            } else if(today == 3){
+
+                alert("Enjoy your Wednesday");
+
+            } else if(today == 4){
+
+                alert("Enjoy your Thursday");
+                
+            } else if(today == 5){
+
+                alert("Enjoy your Friday");
+
+            } else{
+
+                alert("Enjoy your weekend");
+            }
 
         </script>
         <!-- <div class="upper">
