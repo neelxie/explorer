@@ -15,31 +15,26 @@
     <body>
         <p id="result"></p>
         <script>
-            var now = new Date();
+            
+            var x = new Date();
 
-            var today = now.getDay();
-
-            if(today == 2){
-
-                alert("Enjoy your Tuesday!");
-
-            } else if(today == 3){
-
-                alert("Enjoy your Wednesday");
-
-            } else if(today == 4){
-
-                alert("Enjoy your Thursday");
+            switch(x.getDay()){
                 
-            } else if(today == 5){
-
-                alert("Enjoy your Friday");
-
-            } else{
-
-                alert("Enjoy your weekend");
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                case 5:
+                    alert("Today is a Weekday");
+                    break;
+                case 0:
+                case 6:
+                    alert("Today is a Weekend");
+                    break;
+                default:
+                    alert("Enjoy everyday given");
+                    break;
             }
-
         </script>
         <!-- <div class="upper">
             <h1>This is a heading</h1>
