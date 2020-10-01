@@ -18,12 +18,19 @@
             
             var colors = ["red","blue", "green", "yellow", "pink"];
 
-            var last = colors.shift();
+            var last = colors.splice(0, 1);
+
             document.write(last + "<br>");
-            document.write(colors);
-            var nextLast = colors.shift();
-            document.write("<br>" + nextLast + "<br>");
-            document.write(colors);
+            document.write(colors + "<br>");
+            document.write(colors.length + "<br>");
+
+            last = colors.splice(1, 0, "maroon", "aqua");
+            document.write(colors + "<br>");
+            document.write(last);
+            // document.write()
+            // var nextLast = colors.shift();
+            // document.write("<br>" + nextLast + "<br>");
+            // document.write(colors);
 
         </script>
         <!-- <div class="upper">
