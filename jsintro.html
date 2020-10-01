@@ -16,25 +16,15 @@
         <p id="result"></p>
         <script>
             
-            var x = new Date();
+            var colors = ["red","blue", "green", "yellow", "pink"];
 
-            switch(x.getDay()){
-                
-                case 1:
-                case 2:
-                case 3:
-                case 4:
-                case 5:
-                    alert("Today is a Weekday");
-                    break;
-                case 0:
-                case 6:
-                    alert("Today is a Weekend");
-                    break;
-                default:
-                    alert("Enjoy everyday given");
-                    break;
-            }
+            var last = colors.shift();
+            document.write(last + "<br>");
+            document.write(colors);
+            var nextLast = colors.shift();
+            document.write("<br>" + nextLast + "<br>");
+            document.write(colors);
+
         </script>
         <!-- <div class="upper">
             <h1>This is a heading</h1>
