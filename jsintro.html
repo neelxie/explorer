@@ -16,12 +16,12 @@
         <p id="result"></p>
         <script>
             
-            var colors = ["red","blue", "green", "yellow", "pink"];
+            var stuff = [1, 9, 3, 1, false, 5, 1, 4, 7];
+            var result = stuff.findIndex(function(myItem){
+                return myItem > 4;
+            });
 
-            // document.write(colors.join());  equivalent to adding a comma as a parameter
-            document.write(colors.join(", "));
-            // document.write(colors.length + "<br>");
-            // document.write(last);
+            document.write(result);
 
         </script>
         
