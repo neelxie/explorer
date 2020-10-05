@@ -18,15 +18,10 @@
             
             var colors = ["red","blue", "green", "yellow", "pink"];
 
-            var last = colors.splice(0, 1);
-
-            document.write(last + "<br>");
-            document.write(colors + "<br>");
-            document.write(colors.length + "<br>");
-
-            last = colors.splice(1, 0, "maroon", "aqua");
-            document.write(colors + "<br>");
-            document.write(last);
+            // document.write(colors.join());  equivalent to adding a comma as a parameter
+            document.write(colors.join(", "));
+            // document.write(colors.length + "<br>");
+            // document.write(last);
 
         </script>
         
