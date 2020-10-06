@@ -16,12 +16,24 @@
         <p id="result"></p>
         <script>
             
-            var stuff = [1, 9, 3, 1, false, 5, 1, 4, 7];
-            var result = stuff.findIndex(function(myItem){
-                return myItem > 4;
+            var colors = [5, 20, 10, 75, 50, 100];
+            // a = 5
+            // b = 20
+            //1. answer < 0 a == 1st
+            // 2. answer > 0 b ==1st
+            // 3 answer === 0 same
+            //5 - 20 = -15
+            // [5] -- [20, 10, 75, 50, 100]
+            //20 - 10 = 10
+            // [5] -- [10, 20, 75, 50, 100]
+            // 10 - 20 = -10
+            // [5, 10] -- [20, 7]
+
+            colors.sort(function(a, b){
+                return a - b;
             });
 
-            document.write(result);
+            alert(colors);
 
         </script>
         
