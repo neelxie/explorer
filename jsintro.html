@@ -16,24 +16,19 @@
         <p id="result"></p>
         <script>
             
-            var colors = [5, 20, 10, 75, 50, 100];
-            // a = 5
-            // b = 20
-            //1. answer < 0 a == 1st
-            // 2. answer > 0 b ==1st
-            // 3 answer === 0 same
-            //5 - 20 = -15
-            // [5] -- [20, 10, 75, 50, 100]
-            //20 - 10 = 10
-            // [5] -- [10, 20, 75, 50, 100]
-            // 10 - 20 = -10
-            // [5, 10] -- [20, 7]
+            var numbers = [5, 20, 10, 75, 50, -3];
+            
+            function findMax(arr){
+                return Math.max.apply(null, arr);
+            }
+            // Math.max(5, 20, 10, 75, 50, -3)
 
-            colors.sort(function(a, b){
-                return a - b;
-            });
+            function findMin(arr){
+                return Math.min.apply(null, arr);
+            }
 
-            alert(colors);
+            alert(findMax(numbers));
+            alert(findMin(numbers));
 
         </script>
         
