@@ -10,23 +10,14 @@
         <script></script>
     </head>
     <body>
-        <p id="result"></p>
+        <p id="result">my first paragraph</p>
+        <p>Second paragraph</p>
         <script>
-            
-            var numbers = [5, 20, 10, 75, 50, -3];
-            
-            function findMax(arr){
-                return Math.max.apply(null, arr);
-            }
-            // Math.max(5, 20, 10, 75, 50, -3)
+            var item = document.getElementById("result");
 
-            function findMin(arr){
-                return Math.min.apply(null, arr);
-            }
-
-            alert(findMax(numbers));
-            alert(findMin(numbers));
-
+            item.style.color = "blue";
+            item.style.fontSize = "18px";
+            item.style.fontWeight = "bold";
         </script>
         
     </body>
