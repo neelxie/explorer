@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,20 +10,15 @@
         <script></script>
     </head>
     <body>
-        <p id="result"></p>
+        <p id="result">my first paragraph</p>
+        <p>Second paragraph</p>
         <script>
-            console.log(parseInt("3.14"));
-            console.log(parseInt("20px"));
-            console.log(parseInt("0xff", 16));
-            console.log(parseInt("30 years"));
-            console.log(parseInt("year 2020"));
-            console.log(parseInt("10 28 2020"));
+            var item = document.getElementById("result");
 
+            item.style.color = "blue";
+            item.style.fontSize = "18px";
+            item.style.fontWeight = "bold";
         </script>
-        <!-- <div class="upper">
-            <h1>This is a heading</h1>
-            <p>This is a paragraph</p>
-            NaN
-        </div> -->
+        
     </body>
 </html>
