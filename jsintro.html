@@ -6,18 +6,25 @@
         <title>Introduction To JavaScript</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./colors.css">
+        <!-- <link rel="stylesheet" href="./colors.css"> -->
         <script></script>
+        <style>
+            .result{
+                font-weight: bold;
+                font-style: italic;
+                color: red;
+            }
+        </style>
+
     </head>
     <body>
-        <p id="result">my first paragraph</p>
-        <p>Second paragraph</p>
+        <div id="info" class="disabled">my first div!</div>
         <script>
-            var item = document.getElementById("result");
+            var item = document.getElementById("info");
 
-            item.style.color = "blue";
-            item.style.fontSize = "18px";
-            item.style.fontWeight = "bold";
+            item.className = "note";
+            item.className += " result";
+
         </script>
         
     </body>
