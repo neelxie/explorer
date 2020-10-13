@@ -10,8 +10,6 @@
         <script></script>
         <style>
             .result{
-                font-weight: bold;
-                font-style: italic;
                 color: red;
             }
         </style>
@@ -22,8 +20,15 @@
         <script>
             var item = document.getElementById("info");
 
-            item.className = "note";
-            item.className += " result";
+            item.classList.add("hide");
+            item.classList.add("note", "highlight");
+            item.classList.remove("hide");
+            item.classList.remove("disabled", "note");
+            item.classList.toggle("visible");
+
+            if(item.classList.contains("highlight")){
+                alert("The specified class exists on the element.");
+            }
 
         </script>
         
