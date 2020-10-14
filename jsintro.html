@@ -6,31 +6,20 @@
         <title>Introduction To JavaScript</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- <link rel="stylesheet" href="./colors.css"> -->
+        <link rel="stylesheet" href="./colors.css">
         <script></script>
-        <style>
-            .result{
-                color: red;
-            }
-        </style>
 
     </head>
     <body>
-        <div id="info" class="disabled">my first div!</div>
+        <button type="button" id="myBtn">Click here</button>
         <script>
-            
-            var item = document.getElementById("info");
 
-            item.classList.add("hide");
-            item.classList.add("note", "highlight");
-            item.classList.remove("hide");
-            item.classList.remove("disabled", "note");
-            item.classList.toggle("visible");
+            var btn = document.getElementById("myBtn");
 
-            if(item.classList.contains("highlight")){
-                alert("The specified class exists on the element.");
-            }
+            btn.setAttribute("class", "click-btn");
+            btn.setAttribute("disabled", "");
 
+            btn.setAttribute("class", "result");
         </script>
         
     </body>
