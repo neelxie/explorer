@@ -17,19 +17,16 @@
             <p id="hint">Just another paragraph.</p>
         </div>
 
-        <button type="button" onclick="insertElement()">Insert Element</button>
         <script>
-            function insertElement(){
-                var myDiv = document.createElement("div");
+            
 
-                var divContent = document.createTextNode("Hello there, Explorer Academy here!");
+            var stuff = document.getElementById("main").innerHTML;
 
-                myDiv.appendChild(divContent);
+            alert(stuff);
 
-                var newDiv = document.getElementById("main");
-
-                document.body.insertBefore(myDiv, newDiv);
-            }
+            var ourDiv = document.getElementById("main");
+            
+            ourDiv.innerHTML = "<p>This is the <em>newly inserted</em> paragraph.</p>";
 
         </script>
         
