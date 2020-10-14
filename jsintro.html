@@ -11,15 +11,26 @@
 
     </head>
     <body>
-        <button type="button" id="myBtn">Click here</button>
+
+        <div id="main">
+            <h1 id="title">Hello There!</h1>
+            <p id="hint">Just another paragraph.</p>
+        </div>
+
+        <button type="button" onclick="insertElement()">Insert Element</button>
         <script>
+            function insertElement(){
+                var myDiv = document.createElement("div");
 
-            var btn = document.getElementById("myBtn");
+                var divContent = document.createTextNode("Hello there, Explorer Academy here!");
 
-            btn.setAttribute("class", "click-btn");
-            btn.setAttribute("disabled", "");
+                myDiv.appendChild(divContent);
 
-            btn.setAttribute("class", "result");
+                var newDiv = document.getElementById("main");
+
+                document.body.insertBefore(myDiv, newDiv);
+            }
+
         </script>
         
     </body>
