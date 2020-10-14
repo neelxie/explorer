@@ -14,20 +14,15 @@
 
         <div id="main">
             <h1 id="title">Hello There!</h1>
-            <p id="hint">Just another paragraph.</p>
+            <p id="hint">Just another simple paragraph</p>
         </div>
 
         <script>
             
+            // var parentElement = document.getElementById("main");
+            var childElement = document.getElementById("hint");
 
-            var stuff = document.getElementById("main").innerHTML;
-
-            alert(stuff);
-
-            var ourDiv = document.getElementById("main");
-            
-            ourDiv.innerHTML = "<p>This is the <em>newly inserted</em> paragraph.</p>";
-
+            childElement.parentNode.removeChild(childElement);
         </script>
         
     </body>
