@@ -18,11 +18,14 @@
         </div>
 
         <script>
-            
-            // var parentElement = document.getElementById("main");
-            var childElement = document.getElementById("hint");
+            var parentElement = document.getElementById("main");
+            var exElement = document.getElementById("hint");
 
-            childElement.parentNode.removeChild(childElement);
+            var newEl = document.createElement("p");
+            var content = document.createTextNode("I have replaced the previous paragraph.");
+            newEl.appendChild(content);
+
+            parentElement.replaceChild(newEl, exElement);
         </script>
         
     </body>
