@@ -18,11 +18,13 @@
         </div>
 
         <script>
-            var hint = document.getElementById("hint");
+            var title = document.getElementById("title");
             
-            alert(hint.parentNode.nodeName);
-            alert(document.documentElement.parentNode.nodeName);
-            alert(document.parentNode);
+            alert(title.previousSibling.nodeName);
+
+            var hint = document.getElementById("hint");
+            alert(hint.nextSibling.nodeName);
+            
         </script>
         
     </body>
