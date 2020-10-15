@@ -18,15 +18,11 @@
         </div>
 
         <script>
-            var main = document.getElementById("main");
+            var hint = document.getElementById("hint");
             
-            if(main.hasChildNodes()){
-                var nodes = main.children;
-
-                for(var i = 0; i < nodes.length; i++){
-                    alert(nodes[i].nodeName);
-                }
-            }
+            alert(hint.parentNode.nodeName);
+            alert(document.documentElement.parentNode.nodeName);
+            alert(document.parentNode);
         </script>
         
     </body>
