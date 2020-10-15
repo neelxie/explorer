@@ -14,18 +14,15 @@
 
         <div id="main">
             <h1 id="title">Hello There!</h1>
-            <p id="hint">Just another simple paragraph</p>
+            <p id="hint"><span>Just another simple paragraph</span></p>
         </div>
 
         <script>
-            var parentElement = document.getElementById("main");
-            var exElement = document.getElementById("hint");
+            var main = document.getElementById("main");
+            console.log(main.firstChild.nodeName);
 
-            var newEl = document.createElement("p");
-            var content = document.createTextNode("I have replaced the previous paragraph.");
-            newEl.appendChild(content);
-
-            parentElement.replaceChild(newEl, exElement);
+            var hint = document.getElementById("hint");
+            console.log(hint.firstChild.nodeName);
         </script>
         
     </body>
