@@ -19,10 +19,14 @@
 
         <script>
             var main = document.getElementById("main");
-            console.log(main.firstChild.nodeName);
+            
+            if(main.hasChildNodes()){
+                var nodes = main.children;
 
-            var hint = document.getElementById("hint");
-            console.log(hint.firstChild.nodeName);
+                for(var i = 0; i < nodes.length; i++){
+                    alert(nodes[i].nodeName);
+                }
+            }
         </script>
         
     </body>
