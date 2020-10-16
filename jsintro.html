@@ -13,14 +13,14 @@
     <body>
 
         <script>
-            function getPixelDepth(){
+            function getCurrentPageUrl(){
 
-                alert("Your screen pixel depth is: " + screen.pixelDepth);
+                alert("This page's URL is: " + window.location.href);
             }
 
         </script>
-        <button type="button" onclick="getPixelDepth();">
-            Get Pixel Depth
+        <button type="button" onclick="getCurrentPageUrl();">
+            Get Page URL
         </button>
         
     </body>
