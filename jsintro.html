@@ -13,16 +13,14 @@
     <body>
 
         <script>
-            function windowSize(){
-                var w = window.innerWidth;
-                var h = window.innerHeight;
+            function getResolution(){
 
-                alert("Width: " + w + ", " + "Height: " + h);
+                alert("Your screen is: " + screen.width + "x" + screen.height);
             }
 
         </script>
-        <button type="button" onclick="windowSize();">
-            Get Window Size
+        <button type="button" onclick="getResolution();">
+            Get Screen Resolution
         </button>
         
     </body>
