@@ -13,15 +13,18 @@
     <body>
 
         <script>
-            function getCurrentPageUrl(){
-
-                alert("This page's URL is: " + window.location.href);
-            }
+            document.write(window.location.href + "<br>");
+            document.write(window.location.protocol + "<br>");
+            document.write(window.location.host + "<br>");
+            document.write(window.location.hostname + "<br>");
+            document.write(window.location.port + "<br>");
+            document.write(window.location.pathname + "<br>");
+            document.write(window.location.search + "<br>");
+            document.write(window.location.hash + "<br>");
+            document.write(window.location.origin + "<br>");
+            document.write(window.location.ancestorOrigins + "<br>");
 
         </script>
-        <button type="button" onclick="getCurrentPageUrl();">
-            Get Page URL
-        </button>
         
     </body>
 </html>
