@@ -11,14 +11,14 @@
     </head>
     <body>
         <script>
-            function myViews(){
-                alert("You have accessed " + window.history.length + " web pages in this session");
+            function goBack(){
+                window.history.back();
             }
 
         </script>
 
-        <button type="button" onclick="myViews();">
-            Get Views Count
+        <button type="button" onclick="goBack();">
+            Go to Previous Page
         </button>
     </body>
 </html>
