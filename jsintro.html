@@ -11,16 +11,14 @@
     </head>
     <body>
         <script>
-            document.write(window.location.href + "<br>");
-            document.write(window.location.protocol + "<br>");
-            document.write(window.location.host + "<br>");
-            document.write(window.location.hostname + "<br>");
-            document.write(window.location.port + "<br>");
-            document.write(window.location.pathname + "<br>");
-            document.write(window.location.search + "<br>");
-            document.write(window.location.hash + "<br>");
-            document.write(window.location.origin + "<br>");
-            document.write(window.location.ancestorOrigins + "<br>");
+            function myReload(){
+                window.location.reload(true);
+            }
+
         </script>
+
+        <button type="button" onclick="myReload();">
+            Reload Page
+        </button>
     </body>
 </html>
