@@ -11,14 +11,14 @@
     </head>
     <body>
         <script>
-            function myReload(){
-                window.location.reload(true);
+            function myViews(){
+                alert("You have accessed " + window.history.length + " web pages in this session");
             }
 
         </script>
 
-        <button type="button" onclick="myReload();">
-            Reload Page
+        <button type="button" onclick="myViews();">
+            Get Views Count
         </button>
     </body>
 </html>
