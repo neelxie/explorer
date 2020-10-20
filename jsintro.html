@@ -11,14 +11,18 @@
     </head>
     <body>
         <script>
-            function goForward(){
-                window.history.forward();
+            function checkConnectionStatus(){
+                if(navigator.onLine){
+                    alert("Your internet connection is on!");
+                } else {
+                    alert("Your internet  connection is off!");
+                }
             }
 
         </script>
 
-        <button type="button" onclick="goForward();">
-            Go Forward
+        <button type="button" onclick="checkConnectionStatus();">
+            Check your connection
         </button>
     </body>
 </html>
