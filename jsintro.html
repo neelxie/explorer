@@ -11,38 +11,20 @@
     </head>
     <body>
         <script>
-            var hint = document.getElementById("hint");
 
-            function updateConnectionStatus(){
-                var status = document.getElementById("status");
-
-                if(navigator.onLine){
-                    status.innerHTML = "Online";
-                    status.classList.add("online");
-                    status.classList.remove("offline");
+            function checkCookieEnabled(){
+                if(navigator.cookieEnabled){
+                    alert("Cookies are enabled in your brrowser.");
                 } else {
-                    status.innerHTML = "Offline";
-                    status.classList.add("offline");
-                    status.classList.remove("online");
+                    alert("Cookies are disabled in your browser");
                 }
             }
-
-            window.addEventListener("load", updateConnectionStatus);
-
-            window.addEventListener("online", function(e){
-                updateConnectionStatus();
-                hint.innerHTML = "We are online.";
-            });
-
-            window.addEventListener("offline", function(e){
-                updateConnectionStatus();
-                hint.innerHTML = "Looks like you are offline.";
-            });
+               
 
         </script>
 
-        <div id="status"></div>
-        <p>Test this out with and without an internet connection.</p>
-        <p id="hint"></p>
+        <button type="button" onclick="checkCookieEnabled();">
+            Check if Cookies are enabled
+        </button>
     </body>
 </html>
