@@ -12,19 +12,16 @@
     <body>
         <script>
 
-            function checkCookieEnabled(){
-                if(navigator.cookieEnabled){
-                    alert("Cookies are enabled in your brrowser.");
-                } else {
-                    alert("Cookies are disabled in your browser");
-                }
+            function checkLanguage(){
+                alert("Your browser's language is: " + navigator.language);
+                
             }
                
 
         </script>
 
-        <button type="button" onclick="checkCookieEnabled();">
-            Check if Cookies are enabled
+        <button type="button" onclick="checkLanguage();">
+            Check Language
         </button>
     </body>
 </html>
