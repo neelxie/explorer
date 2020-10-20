@@ -12,16 +12,20 @@
     <body>
         <script>
 
-            function checkLanguage(){
-                alert("Your browser's language is: " + navigator.language);
+            function checkJavaEnabled(){
+                if(navigator.javaEnabled){
+                    alert("Your browser is Java Enabled.");
+                } else {
+                    alert("Your browser is not Java Enabled.");
+                }
                 
             }
                
 
         </script>
 
-        <button type="button" onclick="checkLanguage();">
-            Check Language
+        <button type="button" onclick="checkJavaEnabled();">
+            Check if Java is Enabled
         </button>
     </body>
 </html>
