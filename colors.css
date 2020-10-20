@@ -5,3 +5,41 @@
     text-align: center;
 }
 
+#status{
+    border: 2px solid;
+    padding: 15px 20px 15px 40px;
+    width: 160px;
+    margin: 0 auto;
+    border-radius: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+}
+
+#status.online{
+    color: green;
+}
+
+#status.offline{
+    color: red;
+}
+
+#status.online::before, #status.offline::before{
+    width: 25px;
+    height: 25px;
+    content: "";
+    border-radius: 15px;
+    box-shadow: 0 0 8px;
+    position: absolute;
+    left: 20px;
+    top: 25px;
+}
+
+#status.online::before{
+    background: green;
+}
+
+#status.offline::before{
+    background: red;
+}
