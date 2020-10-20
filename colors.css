@@ -2,44 +2,6 @@
 *{
     font-size: 16px;
     font-family: cursive;
-}
-
-main{
-    /* background: radial-gradient(red, yellow 30%, green); */
-}
-
-.upper{
-    height: 33vh;
-    /* background: radial-gradient( red, blue, black, white); */
-    border-left-style: dotted;
-    border-bottom: double;
-    background-color: pink;
-}
-
-.middle{
-    height: 33vh;
-    background-color: purple;
-}
-
-.lower{
-    height: 63vh;
-    background-color: teal;
-    /* background-image: url(./big.jpg); */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-h1{
-    font-size: 32px;
-    color: navy;
     text-align: center;
-    border-style: solid;
-    border-width: 12px 9px;
-    border-color: #923456;
 }
 
-button{
-    color: red;
-    /* height: 3rem; */
-    /* width: 5rem; */
-}

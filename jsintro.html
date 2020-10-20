@@ -11,18 +11,38 @@
     </head>
     <body>
         <script>
-            function checkConnectionStatus(){
+            var hint = document.getElementById("hint");
+
+            function updateConnectionStatus(){
+                var status = document.getElementById("status");
+
                 if(navigator.onLine){
-                    alert("Your internet connection is on!");
+                    status.innerHTML = "Online";
+                    status.classList.add("online");
+                    status.classList.remove("offline");
                 } else {
-                    alert("Your internet  connection is off!");
+                    status.innerHTML = "Offline";
+                    status.classList.add("offline");
+                    status.classList.remove("online");
                 }
             }
 
+            window.addEventListener("load", updateConnectionStatus);
+
+            window.addEventListener("online", function(e){
+                updateConnectionStatus();
+                hint.innerHTML = "We are online.";
+            });
+
+            window.addEventListener("offline", function(e){
+                updateConnectionStatus();
+                hint.innerHTML = "Looks like you are offline.";
+            });
+
         </script>
 
-        <button type="button" onclick="checkConnectionStatus();">
-            Check your connection
-        </button>
+        <div id="status"></div>
+        <p>Test this out with and without an internet connection.</p>
+        <p id="hint"></p>
     </body>
 </html>
