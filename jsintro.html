@@ -10,16 +10,13 @@
     </head>
     <body>
         <script>
-            function checkJavaEnabled(){
-                if(navigator.javaEnabled){
-                    alert("Your browser is Java Enabled.");
-                } else {
-                    alert("Your browser is not Java Enabled.");
-                }
+            var result = confirm("Are you sure?");
+
+            if(result){
+                document.write("You clicked the OK button.");
+            } else {
+                document.write("You clicked the Cancel button.");
             }
         </script>
-        <button type="button" onclick="checkJavaEnabled();">
-            Check if Java is Enabled
-        </button>
     </body>
 </html>
