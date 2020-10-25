@@ -10,12 +10,22 @@
     </head>
     <body>
         <script>
-            function myFunction(){
-                var dd = new Date();
-                document.getElementById("clock").innerHTML = dd.toLocaleTimeString();
+            var timeoutID;
+
+            function delayedAlert(){
+                timeoutID = setTimeout(showAlert, 2000);
             }
-            setInterval(myFunction, 1000);
+
+            function showAlert(){
+                alert('This is a Javascript alert box.');
+            }
+
+            function clearAlert(){
+                clearTimeout(timeoutID);
+            }
         </script>
-        <p>Current time is: <span id="clock"></span></p>
+        <button onclick="delayedAlert();">Show Alert After 2 seconds.</button>
+
+        <button onclick="clearAlert();">Cancel Alert Before it Displays</button>
     </body>
 </html>
