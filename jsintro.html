@@ -10,21 +10,8 @@
     </head>
     <body>
         <script>
-            var intervalID;
-
-            function showTime(){
-                var dd = new Date();
-                document.getElementById("clock").innerHTML = dd.toLocaleTimeString();
-            }
-
-            function stopClock(){
-                clearInterval(intervalID);
-            }
-
-            var intervalID = setInterval(showTime, 1000);
+            var dd = new Date();
+            document.write(dd);
         </script>
-        <p>The Current time on your computer is: <span id="clock"></span></p>
-
-        <button onclick="stopClock();">Stop Clock!</button>
     </body>
 </html>
