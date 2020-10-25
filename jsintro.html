@@ -11,9 +11,11 @@
     <body>
         <script>
             function myFunction(){
-                alert("Hello Everyone!");
+                var dd = new Date();
+                document.getElementById("clock").innerHTML = dd.toLocaleTimeString();
             }
+            setInterval(myFunction, 1000);
         </script>
-        <button onclick="setTimeout(myFunction, 3000)">Click Here!</button>
+        <p>Current time is: <span id="clock"></span></p>
     </body>
 </html>
