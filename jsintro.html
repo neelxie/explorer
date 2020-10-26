@@ -10,10 +10,14 @@
     </head>
     <body>
         <script>
-            document.write(Math.abs(-4) + "<br>");
-            document.write(Math.abs(4) + "<br>");
-            document.write(Math.abs(-7) + "<br>");
-            document.write(Math.abs(-9.5) + "<br>");
+            document.write(Math.random() + "<br>");
+
+            function getRandomNum(max){
+                return Math.floor(Math.random() * max);
+            }
+
+            document.write(getRandomNum(100) + "<br>");
+            document.write(getRandomNum(1) + "<br>");
         </script>
     </body>
 </html>
