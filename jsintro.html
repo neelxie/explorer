@@ -11,8 +11,8 @@
     <body>
         <script>
             var myArr = [1, 2, 3, 4];
-            document.write(Math.max.apply(null, myArr) + "<br>");
-            document.write(Math.min.apply(null, myArr) + "<br>");
+            document.write(Math.max(...myArr) + "<br>");
+            document.write(Math.min(...myArr) + "<br>");
         </script>
     </body>
 </html>
