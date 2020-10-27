@@ -9,30 +9,20 @@
         <link rel="stylesheet" href="./colors.css">
     </head>
     <body>
+        <button id="myBtn">Click Here!</button>
         <script>
-            var arr = [1, 2, 4];
+            function firstFunction(){
+                alert("First Function executed.");
+            }
 
-            document.write(arr.toString() + "<br>");
-            var dd = new Date(2019, 5, 21);
-            // alert(typeof num);
+            function secondFunction(){
+                alert("Second Function executed.");
+            }
 
-            // var str = num.toBoolean();
-            // alert(typeof str);
-            // document.write(Boolean("") + "<br>");
+            var btn = document.getElementById("myBtn");
 
-            document.write(dd.toDateString() + "<br>");
-            document.write(dd.valueOf() + "<br>");
-            // document.write(Boolean("false") + "<br>");
-            // document.write(Boolean(123) + "<br>");
-            // document.write(Boolean(NaN) + "<br>");
-            // document.write(Boolean(123e-1) + "<br>");
-            // document.write(Boolean(11.8) + "<br>");
-            // document.write(Boolean(0xFF) + "<br>");
-            // document.write(Boolean(null) + "<br>");
-            // document.write(Boolean(false) + "<br>");
-            // document.write(Boolean(true) + "<br>");
-            // document.write(Boolean(undefined) + "<br>");
-            
+            btn.onclick = firstFunction;
+            btn.onclick = secondFunction;
         </script>
     </body>
 </html>
