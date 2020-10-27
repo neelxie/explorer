@@ -10,7 +10,9 @@
     </head>
     <body>
         <script>
+            var arr = [1, 2, 4];
 
+            document.write(arr.toString() + "<br>");
             var dd = new Date(2019, 5, 21);
             // alert(typeof num);
 
@@ -18,12 +20,8 @@
             // alert(typeof str);
             // document.write(Boolean("") + "<br>");
 
-            document.write(dd + "<br>");
-
-            var dd1 = new Date(2020, 10, 27);
-
-            var tym = dd1 - dd;
-            document.write(tym + "<br>");
+            document.write(dd.toDateString() + "<br>");
+            document.write(dd.valueOf() + "<br>");
             // document.write(Boolean("false") + "<br>");
             // document.write(Boolean(123) + "<br>");
             // document.write(Boolean(NaN) + "<br>");
