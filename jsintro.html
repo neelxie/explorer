@@ -11,21 +11,24 @@
     <body>
         <script>
 
-            var num  = 21;
-            alert(typeof num);
+            // var num  = 21;
+            // alert(typeof num);
 
-            var str = num.toString();
-            alert(typeof str);
-            document.write(String("Hello there!") + "<br>");
-            document.write(String(123) + "<br>");
-            document.write(String(12 + 14) + "<br>");
-            document.write(String(123e-1) + "<br>");
-            document.write(String(11.8) + "<br>");
-            document.write(String(0xFF) + "<br>");
-            document.write(String(null) + "<br>");
-            document.write(String(false) + "<br>");
-            document.write(String(true) + "<br>");
-            document.write(String(undefined) + "<br>");
+            // var str = num.toBoolean();
+            // alert(typeof str);
+            document.write(Boolean("") + "<br>");
+            document.write(Boolean(" ") + "<br>");
+            document.write(Boolean("Hello there!") + "<br>");
+            document.write(Boolean("false") + "<br>");
+            document.write(Boolean(123) + "<br>");
+            document.write(Boolean(NaN) + "<br>");
+            document.write(Boolean(123e-1) + "<br>");
+            document.write(Boolean(11.8) + "<br>");
+            document.write(Boolean(0xFF) + "<br>");
+            document.write(Boolean(null) + "<br>");
+            document.write(Boolean(false) + "<br>");
+            document.write(Boolean(true) + "<br>");
+            document.write(Boolean(undefined) + "<br>");
             
         </script>
     </body>
