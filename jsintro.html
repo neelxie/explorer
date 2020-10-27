@@ -10,11 +10,19 @@
     </head>
     <body>
         <script>
-            var str = "123";
-            alert(typeof str);
+            document.write(Number("Hello there!") + "<br>");
+            document.write(Number("null") + "<br>");
+            document.write(Number("undefined") + "<br>");
+            document.write(Number("0xFF") + "<br>");
+            document.write(Number("123e-1") + "<br>");
+            document.write(Number("") + "<br>");
+            document.write(Number(" ") + "<br>");
 
-            var num = Number(str);
-            alert(typeof num);
+            document.write(Number(" 123 ") + "<br>");
+            document.write(Number(null) + "<br>");
+            document.write(Number(false) + "<br>");
+            document.write(Number(true) + "<br>");
+            document.write(Number("7.5") + "<br>");
             
         </script>
     </body>
