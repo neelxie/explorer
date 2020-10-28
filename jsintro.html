@@ -11,24 +11,16 @@
     <body>
         <button id="myBtn">Click Here!</button>
         <script>
-            
-            var btn = document.getElementById("myBtn");
 
             function firstFunction(){
-                alert("Hello, Welcome to Explorer Academy.");
+                alert("Hello, Welcome to Explorer Academy");
             }
 
-            function setHoverColor(){
-                btn.style.background = "blue";
-            }
-
-            function setOriginalColor(){
-                btn.style.background = "";
-            }
+            var btn = document.getElementById("myBtn");
 
             btn.addEventListener("click", firstFunction);
-            btn.addEventListener("mouseover", setHoverColor);
-            btn.addEventListener("mouseout", setOriginalColor);
+
+            btn.removeEventListener("click", firstFunction);
         </script>
     </body>
 </html>
