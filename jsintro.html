@@ -6,21 +6,31 @@
         <title>Introduction To JavaScript</title>
         <meta name="description" content="Introduction Javascript">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./colors.css">
+        <!-- <link rel="stylesheet" href="./colors.css"> -->
+        <style type="text/class">
+            div, p, a{
+                padding: 15px 30px;
+                display: block;
+                border: 2px solid #000;
+                background: wheat;
+            }
+        </style>
     </head>
     <body>
-        <button id="myBtn">Click Here!</button>
+        <div id="wrap">
+            <p class="hint">
+                ,<a href="#">D</a>
+            </p>
+        </div>
         <script>
-
-            function firstFunction(){
-                alert("Hello, Welcome to Explorer Academy");
+            function showTagName(){
+                alert("Capturing: " + this.tagName)
             }
 
-            var btn = document.getElementById("myBtn");
-
-            btn.addEventListener("click", firstFunction);
-
-            btn.removeEventListener("click", firstFunction);
+            var elems = document.querySelectorAll("div, p, a");
+            for(let elem of elems){
+                elem.addEventListener("click", showTagName, true );
+            }
         </script>
     </body>
 </html>
