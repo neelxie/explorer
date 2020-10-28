@@ -11,18 +11,24 @@
     <body>
         <button id="myBtn">Click Here!</button>
         <script>
-            function firstFunction(){
-                alert("First Function executed.");
-            }
-
-            function secondFunction(){
-                alert("Second Function executed.");
-            }
-
+            
             var btn = document.getElementById("myBtn");
 
+            function firstFunction(){
+                alert("Hello, Welcome to Explorer Academy.");
+            }
+
+            function setHoverColor(){
+                btn.style.background = "blue";
+            }
+
+            function setOriginalColor(){
+                btn.style.background = "";
+            }
+
             btn.addEventListener("click", firstFunction);
-            btn.addEventListener("click", secondFunction);
+            btn.addEventListener("mouseover", setHoverColor);
+            btn.addEventListener("mouseout", setOriginalColor);
         </script>
     </body>
 </html>
