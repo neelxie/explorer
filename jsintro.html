@@ -17,12 +17,22 @@
         </style>
     </head>
     <body>
-        <div onclick="alert('Bubbling: ' + this.tagName)">DIV
-            <p onclick="alert('Bubbling: ' + this.tagName)">P
-                <a href="#" onclick="alert('Bubbling: ' + this.tagName)">D</a>
+        <div id="wrap">DIV
+            <p class="hint">P
+                <a href="#">A</a>
             </p>
         </div>
         <script>
+            var div = document.getElementById("wrap");
+            div.onclick = function(event){
+                event.target.style.backgroundColor = "gray";
+
+                setTimeout(() => {
+                    alert("target = " + event.target.tagName + ", this  = " + this.tagName);
+                    event.target.style.backgroundColor = ''
+                    },
+                0);
+            }
         </script>
     </body>
 </html>
