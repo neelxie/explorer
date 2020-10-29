@@ -17,20 +17,12 @@
         </style>
     </head>
     <body>
-        <div id="wrap">
-            <p class="hint">
-                ,<a href="#">D</a>
+        <div onclick="alert('Bubbling: ' + this.tagName)">DIV
+            <p onclick="alert('Bubbling: ' + this.tagName)">P
+                <a href="#" onclick="alert('Bubbling: ' + this.tagName)">D</a>
             </p>
         </div>
         <script>
-            function showTagName(){
-                alert("Capturing: " + this.tagName)
-            }
-
-            var elems = document.querySelectorAll("div, p, a");
-            for(let elem of elems){
-                elem.addEventListener("click", showTagName, true );
-            }
         </script>
     </body>
 </html>
