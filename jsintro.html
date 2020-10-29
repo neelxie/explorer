@@ -17,23 +17,19 @@
         </style>
     </head>
     <body>
-        <div onclick="alert('You clicked: '+ this.tagName)">DIV
-            <p onclick='alert("You clicked: "+ this.tagName)'>P
-                <a href="#" id="link">D</a>
-            </p>
-        </div>
+        <form action="./action.php" method="post" id="users">
+            <label>First Name:</label>
+            <input type="text" name="first-name" id="firstName">
+            <input type="submit" value="Submit" id="submitBtn">
+        </form>
         <script>
-            function sayHi(){
-                alert("Hi there!");
-                event.stopImmediatePropogation();
-            }
-            function sayHello(){
-                alert("Hello Explorer Academy!");
-            }
 
-            var link = document.getElementById("link");
-            link.addEventListener("click", sayHi);
-            link.addEventListener("click", sayHello);
+            var btn = document.getElementById("submitBtn");
+            btn.addEventListener("click", function(event){
+                var name = document.getElementById("firstName").value;
+                alert("Sorry, " + name + ". preventDefault() wont let you submit this form");
+                event.preventDefault();
+            });
         </script>
     </body>
 </html>
