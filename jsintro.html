@@ -17,22 +17,23 @@
         </style>
     </head>
     <body>
-        <div id="wrap">DIV
-            <p class="hint">P
-                <a href="#">A</a>
+        <div onclick="alert('You clicked: '+ this.tagName)">DIV
+            <p onclick='alert("You clicked: "+ this.tagName)'>P
+                <a href="#" id="link">D</a>
             </p>
         </div>
         <script>
-            var div = document.getElementById("wrap");
-            div.onclick = function(event){
-                event.target.style.backgroundColor = "gray";
-
-                setTimeout(() => {
-                    alert("target = " + event.target.tagName + ", this  = " + this.tagName);
-                    event.target.style.backgroundColor = ''
-                    },
-                0);
+            function sayHi(){
+                alert("Hi there!");
+                event.stopImmediatePropogation();
             }
+            function sayHello(){
+                alert("Hello Explorer Academy!");
+            }
+
+            var link = document.getElementById("link");
+            link.addEventListener("click", sayHi);
+            link.addEventListener("click", sayHello);
         </script>
     </body>
 </html>
