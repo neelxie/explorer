@@ -18,21 +18,9 @@
     </head>
     <body>
         <script>
-            var obj = {
-                name: "first object",
-                say: function(greet){
-                    document.write(greet + ", " + this.name);
-                }
-            }
-
-            obj.say("Hello");
-            document.write("<br>");
-
-            var obj1 = {
-                name: "second object"
-            }
-
-            obj.say.apply(obj1, ["Bonjour"]);
+            var numbers = [2, 5, 6, 4, 3, 7];
+            var max = Math.max.apply(null, numbers);
+            alert(max);
         </script>
     </body>
 </html>
