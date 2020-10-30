@@ -21,17 +21,18 @@
             var obj = {
                 name: "first object",
                 say: function(greet){
-                    alert(greet + ", " + this.name);
+                    document.write(greet + ", " + this.name);
                 }
             }
 
             obj.say("Hello");
+            document.write("<br>");
 
             var obj1 = {
                 name: "second object"
             }
 
-            obj.say.call(obj1, "Bonjour");
+            obj.say.apply(obj1, ["Bonjour"]);
         </script>
     </body>
 </html>
