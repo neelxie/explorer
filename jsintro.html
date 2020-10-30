@@ -17,19 +17,21 @@
         </style>
     </head>
     <body>
-        <form action="./action.php" method="post" id="users">
-            <label>First Name:</label>
-            <input type="text" name="first-name" id="firstName">
-            <input type="submit" value="Submit" id="submitBtn">
-        </form>
         <script>
+            var obj = {
+                name: "first object",
+                say: function(greet){
+                    alert(greet + ", " + this.name);
+                }
+            }
 
-            var btn = document.getElementById("submitBtn");
-            btn.addEventListener("click", function(event){
-                var name = document.getElementById("firstName").value;
-                alert("Sorry, " + name + ". preventDefault() wont let you submit this form");
-                event.preventDefault();
-            });
+            obj.say("Hello");
+
+            var obj1 = {
+                name: "second object"
+            }
+
+            obj.say.call(obj1, "Bonjour");
         </script>
     </body>
 </html>
