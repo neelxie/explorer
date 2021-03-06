@@ -41,7 +41,7 @@ li{
 
 .list-links a:hover{
     background-color: orange;
-    color: red;
+    color: rgb(212, 93, 93);
 }
 section{
     height: 34vh;
