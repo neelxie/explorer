@@ -40,7 +40,7 @@ li{
 }
 
 .list-links a:hover{
-    background-color: orange;
+    background-color: rgb(241, 159, 6);
     color: rgb(247, 173, 173);
 }
 section{
